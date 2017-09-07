@@ -1,11 +1,11 @@
-{%extends "layout.html" %}
+{% extends "layout.html" %}
 
 {% block content %}
-    <main class="container signup-sectoin">
+    <main class="container signup-section">
         <div class="section-content">
             <h2>Create an account</h2>
 
-            <form method="post" action="signup.html">
+            <form method="POST" action="/signup">
                 {{ form.hidden_tag() }}
 
                 <div class="form-group">
@@ -32,3 +32,4 @@
             </form>
         </div>
     </main>
+{% endblock %}
