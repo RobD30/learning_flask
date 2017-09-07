@@ -16,7 +16,7 @@ class User(db.Model):
         self.firstname = firstname.title()
         self.lastname = lastname.title()
         self.email = email.lower()
-        self.sel_password(password)
+        self.set_password(password)
 
     def set_password(self, password):
         self.pwdhash = generate_password_hash(password)
